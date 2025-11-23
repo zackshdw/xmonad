@@ -166,6 +166,7 @@ myStartupHook = do
     spawnOnce "lxpolkit &"
     spawnOnce "xset s off &"
     spawnOnce "xset s noblank &"
+    spawnOnce "xset -dpms &"
 
 ------------------------------------------------------------------------
 -- Main
