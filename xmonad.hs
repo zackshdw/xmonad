@@ -173,7 +173,7 @@ myStartupHook = do
 ------------------------------------------------------------------------
 
 main = do
-    xmproc <- spawnPipe "xmobar -x 0 ~/.config/xmobar/xmobar"
+    xmproc <- spawnPipe "xmobar -x 0 ~/.config/xmobar/xmobarrc"
     xmonad $ ewmhFullscreen $ ewmh $ docks $ def
         { terminal           = myTerminal
         , focusFollowsMouse  = myFocusFollowsMouse
