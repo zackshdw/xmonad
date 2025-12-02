@@ -16,7 +16,7 @@ import qualified Data.Map as M
 -- Basic settings
 ------------------------------------------------------------------------
 
-myTerminal           = "kitty"
+myTerminal           = "urxvt"
 myFocusFollowsMouse  = True
 myClickJustFocuses   = True
 myBorderWidth        = 1
@@ -162,7 +162,7 @@ myManageHook = composeAll
 myStartupHook = do
     spawnOnce "compton &"
     spawnOnce "feh --bg-fill ~/Pictures/1297444.jpg &"
-    spawnOnce "xrdb ~/.Xresources &"
+    spawnOnce "xrdb ~/.urxvt/rc.conf &"
     spawnOnce "lxpolkit &"
     spawnOnce "xset s off &"
     spawnOnce "xset s noblank &"
