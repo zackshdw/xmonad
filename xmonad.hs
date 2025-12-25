@@ -161,7 +161,7 @@ myManageHook = composeAll
 
 myStartupHook = do
     spawnOnce "compton &"
-    spawnOnce "feh --bg-fill ~/Pictures/1297444.jpg &"
+    spawnOnce "feh --bg-fill ~/Pictures/ganyu-1.jpg &"
     spawnOnce "xrdb ~/.urxvt/rc.conf &"
     spawnOnce "lxpolkit &"
     spawnOnce "xset s off &"
